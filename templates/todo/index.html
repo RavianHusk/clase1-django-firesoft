@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Todo List</title>
 </head>
 <body>
+    <a href="/add">Crear nuevo todo</a>
     {% for todo in todos %}
         <h2>Title: {{ todo.title }} </h2>
         <ul>
              <li>Description: {{ todo.description }} </li>
              <li>Created: {{ todo.created }}</li>
+             <button>Modificar</button>
+             <button>Borrar</button>
         </ul>
     {% endfor %}
 </body>
